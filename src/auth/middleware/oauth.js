@@ -7,7 +7,7 @@ const CLIENT_SECRET = process.env.CLIENT_SECRET;
 const tokenServerUrl = 'https://github.com/login/oauth/access_token';
 const remoteUserApi = 'https://api.github.com/user';
 
-const API_SERVER = 'http://localhost:3000/oauth';
+const API_SERVER = 'https://rowaid-server.herokuapp.com/oauth';
 
 async function getUserGeneratTokenAddToDB(req, res, next) {
 
