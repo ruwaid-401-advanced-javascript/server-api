@@ -18,9 +18,13 @@
   },
   "homepage": "https://github.com/ruwaid-401-advanced-javascript/server-api#readme",
   "dependencies": {
+    "base-64": "^0.1.0",
+    "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.9.18"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.18",
+    "superagent": "^5.2.2"
   },
   "devDependencies": {
     "morgan": "^1.10.0"
