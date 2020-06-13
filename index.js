@@ -12,7 +12,7 @@ const mongoose = require('mongoose');
 // internal modules
 const server = require('./src/server.js');
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/authenticated-api-server';
+// const MONGODB_URI = process.env.MONGODB_URI;
 const PORT = process.env.PORT || 3000;
 
 
