@@ -19,13 +19,13 @@ const PORT = process.env.PORT || 3000;
 server.start(PORT);
 
 
-const mongooseOptions = {
-  useUnifiedTopology: true,
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useFindAndModify: false,
-};
+// const mongooseOptions = {
+//   useUnifiedTopology: true,
+//   useNewUrlParser: true,
+//   useCreateIndex: true,
+//   useFindAndModify: false,
+// };
 
-mongoose.connect(MONGODB_URI, mongooseOptions);
+// mongoose.connect(MONGODB_URI, mongooseOptions);
 
 
