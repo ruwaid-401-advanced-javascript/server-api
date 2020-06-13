@@ -4,7 +4,7 @@ const express = require('express');
 // const morgan = require('morgan');
 
 const router = require('./auth/router');
-// const apiRouts = require('./routes/api-v1');
+const apiRouts = require('./routes/api-v1');
 
 const error404 = require('./middleware/404');
 const error500 = require('./middleware/500');
@@ -19,7 +19,7 @@ app.get('/', (req, res) => res.status(200).send('hiii  go to --->> /login  route
 
 app.get('/error500',fakeError);
 
-// app.use('/api/v1',apiRouts);
+app.use('/api/v1',apiRouts);
 app.use(router);
 
 function fakeError(req,res,next){
