@@ -1,16 +1,31 @@
 'use strict';
-const express = require('express');
-const app = express();
-app.use(express.json());
+
+/**
+ * will start the server
+ * @module index
+ */
+
+
 // 3rd party lib
 require('dotenv').config();
-
+// const mongoose = require('mongoose');
 // internal modules
+const server = require('./src/server.js');
 
+// const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/authenticated-api-server';
 const PORT = process.env.PORT || 3000;
 
-app.get('/', (req, res) => res.status(200).send('hiii  go to --->> /login  route to try github OAuth'));
+
+server.start(PORT);
 
 
-app.listen(PORT, () =>console.log(`Listnening to PORT ${PORT}`));
+// const mongooseOptions = {
+//   useUnifiedTopology: true,
+//   useNewUrlParser: true,
+//   useCreateIndex: true,
+//   useFindAndModify: false,
+// };
+
+// mongoose.connect(MONGODB_URI, mongooseOptions);
+
 
