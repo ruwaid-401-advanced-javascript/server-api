@@ -8,7 +8,7 @@
 
 // 3rd party lib
 require('dotenv').config();
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 // internal modules
 const server = require('./src/server.js');
 
