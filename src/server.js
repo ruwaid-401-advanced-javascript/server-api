@@ -5,12 +5,13 @@ const express = require('express');
 
 const router = require('./auth/router');
 const apiRouts = require('./routes/api-v1');
-
+const cors = require('cors');
 const error404 = require('./middleware/404');
 const error500 = require('./middleware/500');
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 app.use('/docs', express.static('./docs'));
 app.use('/login', express.static('./public'));
 // app.use(morgan('dev'));
